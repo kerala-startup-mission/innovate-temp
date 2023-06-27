@@ -1,27 +1,292 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Countdown from '../components/Countdown.svelte';
-import Speakers from '../components/Speakers.svelte';
+import Cta from '../components/Cta.astro';
 ---
 
 <Layout  title="Kerala Startup Mission">
-	<main class="py-24 min-h-screen flex flex-col items-center justify-center" >
-		<div class="absolute -z-10 w-full h-full top-0 left-0 bg-black bg-opacity-70"></div>
-  	<div class="absolute -z-20 bg-cover bg-center bg-no-repeat w-full h-full top-0 left-0" style="background-image:url('/img/bg.jpeg')"></div>  
-
-		<div class="container mx-auto text-white text-center">
-
-			<!-- <h1>Kerala Startup Mission</h1> -->
-
-			<Countdown date="2022-09-23T09:00" client:load ></Countdown>
-
-		</div>
-		
-	</main>
-
-	<section class="py-24">
-		<div class="container mx-auto">
-			<Speakers client:load></Speakers>
+	
+	<section class="moveing-text-area">
+		<div class="container">
+				<div class="ovic-running">
+						<div class="wrap">
+								<div class="inner">
+										<p class="item">Request for Proposals IEDC Summit-<a href="https://iedcsummit.in" target="_blank">Apply now</a></p>
+										
+										<p class="item">Idea Fest 2023 Application open <a href="https://grants.startupmission.in" target="_blank">Grants Portal</a></p>
+								</div>
+						</div>
+				</div>
 		</div>
 	</section>
+
+	<main>
+		<!-- slider-area-start -->
+		<div class="slider-area">
+				<div class="swiper-container slider__active">
+						<div class="slider-wrapper swiper-wrapper">
+								<div class="single-slider swiper-slide slider-height d-flex align-items-center" data-background="assets/im/jpeg/coverhome.jpg">
+										<div class="container">
+												<div class="row">
+														<div class="col-xl-5">
+																<div class="slider-content">
+																		<div class="slider-top-btn" data-animation="fadeInLeft" data-delay="1.5s">
+																				<a href="innovators" class="st-btn b-radius">Join IEDC as innovator</a>
+																		</div>
+																		<h2 data-animation="fadeInLeft" data-delay="1.7s" class="pt-15 slider-title pb-5">Largest network of aspiring entrepreneurs...</h2>
+																		<p class="pr-20 slider_text" data-animation="fadeInLeft" data-delay="1.9s">Have an idea, that could revolutionise life..
+																				<br>Give wings to your dreams by joining IEDC </p>
+																		<div class="slider-bottom-btn mt-75">
+																				<a data-animation="fadeInUp" data-delay="1.15s" href="students" class="st-btn-b b-radius">Discover now</a>
+																		</div>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div><!-- /single-slider -->
+								<div class="single-slider swiper-slide slider-height d-flex align-items-center" data-background="assets/im/jpeg/coverproject.jpg">
+										<div class="container">
+												<div class="row">
+														<div class="col-xl-5">
+																<div class="slider-content">
+																		<div class="slider-top-btn" data-animation="fadeInLeft" data-delay="1s">
+																				<a href="newiedc" class="st-btn b-radius">Apply for IEDC</a>
+																		</div>
+																		<h2 data-animation="fadeInLeft" data-delay="1.5s" class="pt-15 slider-title pb-5">Join the startup revolution...</h2>
+																		<p class="pr-20 slider_text" data-animation="fadeInLeft" data-delay="1.7s">Institutions that wish to establish IEDC</p>
+																		<div class="slider-bottom-btn mt-75">
+																				<a data-animation="fadeInUp" data-delay="1.9s" href="newiedc" class="st-btn-b b-radius">Apply now</a>
+																		</div>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+								<!-- /single-slider -->
+								<div class="single-slider swiper-slide slider-height d-flex align-items-center" data-background="assets/im/jpeg/coverhome1.jpg">
+										<div class="container">
+												
+												<div class="row">
+														<div class="col-xl-5">
+																<div class="slider-content">
+																		<div class="slider-top-btn" data-animation="fadeInLeft" data-delay="1s">
+																				<a href="activityreport" class="st-btn b-radius">IEDC Activities</a>
+																		</div>
+																		<h2 data-animation="fadeInLeft" data-delay="1.5s" class="pt-15 slider-title pb-5">IEDC Activities report<br></h2>
+																		<p class="pr-20 slider_text" data-animation="fadeInLeft" data-delay="1.8s">Submit the report of activities here</p>
+																		<div class="slider-bottom-btn mt-75">
+																				<a data-animation="fadeInUp" data-delay="1.10s" href="activityreport.html" class="st-btn-b b-radius">Submit now</a>
+																		</div>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+								<!-- /single-slider -->
+								<div class="main-slider-paginations"></div>
+						</div>
+				</div>
+		</div>
+		<!-- slider-area-end -->
+		<!--About IEDC starts-->
+		<div class="container">
+				<!--counter-->
+
+				<div class="technolgy-index mt-70 mb-10">
+				<div class="container">
+						<div class="row">
+								<div class="col-xl-12 col-lg-12">
+										<div class="main-abs mb-30">                            
+												<div class="row">
+														<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+																<div class="ab-counter-item mb-30">
+																		<div class="ab-counter mb-20">
+																				<div class="counter-icon mr-10">
+																						<img src="assets/img/about/c-icon-01.png" alt="">
+																				</div>
+																				<div class="counter_info">
+																						<span class="counter">425</span>
+																					 <p></p>
+																			 </div>
+																		</div>
+																		<h5>IEDCs</h5>
+																		<p>Innvation & Entrepreneurship development Centres</p>
+																</div>
+														</div>
+														<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+																<div class="ab-counter-item mb-30">
+																		<div class="ab-counter mb-20">
+																				<div class="counter-icon mr-10">
+																						<img src="assets/img/about/c-icon-01.png" alt="">
+																				</div>
+																				<div class="counter_info">
+																						<span class="counter">23</span>
+																					 <p></p>
+																			 </div>
+																		</div>
+																		<h5>Kerala Startup Mission accredited TBIs</h5>
+																		<p>Handholding performing IEDCs to future TBIs</p>
+																</div>
+														</div>
+														<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+																<div class="ab-counter-item mb-30">
+																		<div class="ab-counter mb-20">
+																				<div class="counter-icon mr-10">
+																						<img src="assets/img/about/c-icon-01.png" alt="">
+																				</div>
+																				<div class="counter_info">
+																						<span class="counter">12</span>
+																					 <p></p>
+																			 </div>
+																		</div>
+																		<h5>TBIs</h5>
+																		<p>Government of India approved Technology Business Incubators</p>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+				</div>
+
+				
+						<div class="row align-items-center">
+							 <div class="col-xl-6 col-lg-6">
+									 <div class="about-content">
+											 <span>Kerala Startup Mission</span>
+											 <h4>Innovation &amp; Entrepreneurship Development Centre</h4>
+											 <h5 class="banner-t mb-30">IEDC</h5>
+											 <p class="about-text">Flagship initiative of Kerala Startup Mission...<br>For building vibrant startup ecosystem in academia...</p>
+											 <p>The Innovation and Entrepreneurship Development Centres (IEDC) are platforms set up in 
+												Engineering, Management, Arts &amp; Science Colleges, Medical Institutions, Polytechnics and Universities 
+												with an aim to provide students with an opportunity to experiment and innovate. Kerala Startup Mission 
+												has set up IEDCs in higher educational institutions across the State which provide avenues for creative students to 
+												learn, collaborate and transform their innovative ideas into prototypes of viable products and services. 
+												IEDCs works as the first launch pad for a student’s entrepreneurial journey and provide them with access 
+												to cutting edge technology, world-class infrastructure, high-quality mentorship, early risk capital and 
+												global exposure. <br>
+												Innovation and Entrepreneurship Development Centre (IEDC) is a flagship initiative of 
+												Kerala Startup Mission to promote innovation and entrepreneurship among the student and academic 
+												fraternity in the educational institutions in the State of Kerala and considered as an umbrella 
+												programme that would play an instrumental role in fostering innovation culture in Academic institutions. </p>
+									 </div>
+							 </div>
+							 <div class="col-xl-6 col-lg-6">
+										<div class="about-image w-img">
+												<img src="assets/img/about/about-b.png" alt="">
+										</div>
+								</div>
+						</div>
+				</div>
+				<!--About IEDC Ends-->
+		<!-- features__area-start -->
+		<section class="features__area pt-20">
+				<div class="container">
+						
+						<div class="row row-cols-xxl-4 row-cols-xl-4 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-1 gx-0">
+								<div class="col">
+										<div class="features__item d-flex white-bg">
+												<div class="features__icon mr-20">
+														<i class="fal fa-university"></i>
+												</div>                            
+												<div class="counter_info">
+														<h3><span class="counter">161</span></h3>                                                                   
+														<h5>Arts & Science Colleges and Universities</h5>                            
+												</div>
+										</div>
+								</div>
+								<div class="col">
+										<div class="features__item d-flex white-bg">
+												<div class="features__icon mr-20">
+														<i class="fal fa-cogs"></i>
+												</div>
+												<div class="counter_info">
+														<h3><span class="counter">170</span></h3>                                                                                             
+														<h5>Engineering Colleges & NIT</h5>
+												</div>  
+										</div>
+								</div>
+								<div class="col">
+										<div class="features__item d-flex white-bg">
+												<div class="features__icon mr-20">
+														<i class="fal fa-hospital"></i>
+												</div>
+												<div class="counter_info">
+														<h3><span class="counter">29</span></h3>                            
+														<h5>Health & Allied</h5> 
+												</div>                           
+										</div>
+								</div>
+								<div class="col">
+										<div class="features__item features__item-last d-flex white-bg">
+												<div class="features__icon mr-20">
+														<i class="fad fa-cog"></i>
+												</div>
+												<div class="counter_info">
+														<h3><span class="counter">65</span></h3>
+														<h5>Polytechnic Colleges & ITIs</h5>
+												</div>                            
+										</div>
+								</div>
+						</div>
+						
+				</div>
+		</section>
+		<div class="services-area pt-70 light-bg-s pb-50">
+				<div class="container">
+						
+						<div class="row">
+								<div class="col-xl-12">
+										<div class="abs-section-title text-center">
+												<span>Join us</span>
+												<h4>Join the largest network of aspiring entrepreneurs</h4>
+												<p>Any interested individuals who wishes to take on the path of innovation and entrepreneurship can join IEDC</p>
+										</div>
+								</div>
+						</div>
+						<div class="row mt-40">
+								<div class="col-xl-3 col-lg-3 col-md-6">
+										<div class="services-item mb-30">
+										<button type="button" class="wc-checkout d-flex align-items-center justify-content-center w-100">
+										<a href="newiedc">Apply for IEDC</a>
+												</button>
+										</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-6">
+										<div class="services-item mb-30">
+										<button type="button" class="wc-checkout d-flex align-items-center justify-content-center w-100" >
+										<a href="innovators">Join the network</a>
+												</button>
+										</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-6">
+										<div class="services-item mb-30">
+										<button type="button" class="wc-checkout d-flex align-items-center justify-content-center w-100">
+										<a href="activityreport">Submit Reports</a>
+												</button>
+										</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-6">
+										<div class="services-item mb-30">
+										<button type="button" class="wc-checkout d-flex align-items-center justify-content-center w-100" >
+										<a href="https://iedc.startupmission.in" target="_blank">Know more about IEDCs</a>
+												</button>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+		<!-- features__area-end -->
+
+					 
+		
+		<Cta></Cta>
+
+		
+		<!-- cta-area-end -->
+
+		
+
+	</main>
+
 </Layout>
