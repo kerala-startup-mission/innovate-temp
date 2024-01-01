@@ -18,6 +18,7 @@ import Cta from '../components/Cta.astro';
 	</section>-->
 
 	<main>
+		
 		<!-- slider-area-start -->
 		<div class="slider-area">
 				<div class="swiper-container slider__active">
@@ -677,7 +678,126 @@ import Cta from '../components/Cta.astro';
 		</div>
 		<!-- features__area-end -->
 
-					 
+		<style>
+			#overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+filter:alpha(opacity=70);
+-moz-opacity:0.7;
+-khtml-opacity: 0.7;
+opacity: 0.7;
+z-index: 100;
+display: none;
+}
+.popup-content{
+   padding: 14px 10px;
+   line-height: 1.5;
+}
+.cnt223 a{
+text-decoration: none;
+}
+.popup-onload{
+margin: 0 auto;
+display: none;
+position: fixed;
+z-index: 101;
+top: 50%;
+left: 50%;
+margin-top: -300px;
+margin-left: -300px;
+}
+.cnt223{
+min-width: 600px;
+width: 600px;
+min-height: 150px;
+margin: 100px auto;
+background: #f3f3f3;
+position: relative;
+z-index: 103;
+padding: 15px 35px;
+border-radius: 5px;
+box-shadow: 0 2px 5px #000;
+}
+.cnt223 p{
+clear: both;
+    color: #555555;
+    /* text-align: justify; */
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.cnt223 p a{
+color: #d91900;
+font-weight: bold;
+}
+.cnt223 .x{
+float: right;
+height: 35px;
+left: 22px;
+position: relative;
+top: -25px;
+width: 34px;
+}
+.cnt223 .x:hover{
+cursor: pointer;
+}
+
+			</style>
+			
+			<script>
+				$(function(){
+var overlay = $('<div id="overlay"></div>');
+overlay.show();
+overlay.appendTo(document.body);
+$('.popup-onload').show();
+$('.close').click(function(){
+$('.popup-onload').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+
+$('.x').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+});
+
+
+
+			</script>
+
+<div class='popup-onload'>
+	<div class='cnt223'>
+	
+	<div class="popup-content">
+		  <h4 class="text-center">Welcome to our Kerala Startup Mission Innovation and Entrepreneurship Development Centre</h4>
+		  <p class="text-center">Join IEDC Kerala Whats App Channel <br><a href="https://whatsapp.com/channel/0029VaAY5kI2Jl8FQrAt4K1K"><i class="fab fa-whatsapp"></i> | Join Now</a></p>
+		  <div class="news-info d-sm-flex align-items-center justify-content-between mt-50 mb-50">			
+			<div class="news-share">
+			   <h6 class="align-items-cetre">Social Share</h6>
+			   <a href="https://www.linkedin.com/company/iedckerala/" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			   <a href="https://twitter.com/iedckerala" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+			   <a href="https://discord.gg/JnpjMqtP6f" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
+			   <a href="https://instagram.com/iedckerala?igshid=MzNlNGNkZWQ4Mg==" target="_blank" class="discord"><i class="fab fa-instagram"></i></a>
+			   <a href="https://t.me/iedckerala" class="telegram" target="_blank"><i class="fab fa-telegram"></i></a>
+			   <a href="https://whatsapp.com/channel/0029VaAY5kI2Jl8FQrAt4K1K" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+			   <a href="https://www.facebook.com/profile.php?id=100089262225041" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+			</div>
+
+		 </div>
+		 <p class="text-center">Have any queries or need assistance  <br><a href="https://wa.me/message/L73XUZCKSWRHD1">WhatsApp IEDC Team | <i class="fab fa-whatsapp"></i></a></p>
+
+	<br/>
+	<br/>
+	<a href='' class='close'>Close</a>
+	</div>
+	</div>
+	</div>
 		
 		<Cta></Cta>
 
